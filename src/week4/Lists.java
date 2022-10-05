@@ -40,11 +40,12 @@ public class Lists {
 		vehicleBrands.add("General Electric"); // added only to be removed as it is not a vehicle brand
 		vehicleBrands.remove(26); // method to remove element from list
 		
-		
+//		you can use for loops or enhanced / for each loop. On a for loop you need to invoke the method .get(index)	
 //		for (int i = 0; i < vehicleBrands.size(); i++) {
 //		System.out.println(vehicleBrands.get(i));
-//	}
+//		}
 		
+
 		boolean commonInUS = true;
 		if (commonInUS) {
 			for (int i = 0; i < vehicleBrands.size() - 8; i++) {
@@ -52,7 +53,7 @@ public class Lists {
 			}
 		} else {
 			for (String vehicleBrand : vehicleBrands) {
-			System.out.println(vehicleBrand);
+			System.out.println(vehicleBrand); 
 			}
 		}
 	}
